@@ -57,8 +57,8 @@ using namespace std;
 #define minp                vector<ll>, greater<ll>
 #define M                   1000000007
 #define MM                  1000000009
-#define pie                 3.1415926535897932384626433832795
-#define eu                  2.718281828459045
+#define pie                 3.1415926535897932384626433832795 //value of pi
+#define eu                  2.718281828459045 // value of e
 #define                     fio cin.tie(0);cout.tie(0);ios_base::sync_with_stdio(false);cin.tie(NULL);    clock_t startTime=clock();
 #define time     cout<<(double(clock()-startTime )/(double)CLOCKS_PER_SEC)*1000<<" ms"<<endl;
 #define debug(k) cout<<"\t-> "<<#k<<" = "<<k<<endl;
