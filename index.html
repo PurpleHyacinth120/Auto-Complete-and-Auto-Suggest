@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Autocomplete with Algorithms</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Autocomplete with Algorithms</h1>
-    <p>Enter Name of City To Search</p> <!-- Styled paragraph -->
-    <p id="city-count">Loading city data...</p> <!-- City count paragraph -->
-    <input type="text" id="autocomplete-input" 
-      placeholder="Start typing..." 
-      oninput="window.autocomplete()">
-    <select id="algorithm">
+    <h1>Auto-Complete and Auto-Suggest feature</h1>
+    <p>Enter Name of City To Search</p>
+    <p id="city-count">Loading city data...</p>
+    <input
+      type="text"
+      id="autocomplete-input"
+      placeholder="Start typing..."
+      oninput="window.autocomplete()"
+      autocomplete="off"
+    />
+    <select id="algorithm" onchange="window.autocomplete()">
       <option value="kmp">KMP Algorithm</option>
       <option value="z">Z Algorithm</option>
       <option value="hashing">String Hashing</option>
